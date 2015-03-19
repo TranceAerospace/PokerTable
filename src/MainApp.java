@@ -1,6 +1,7 @@
 
 import java.io.IOException;
 
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -54,6 +55,10 @@ public class MainApp extends Application {
 
             // Set person overview into the center of root layout.
             TableLayout.setCenter(PokerTable);
+            
+            PokerTableController controller = loader.getController();
+            controller.setMainApp(this);
+
         } catch (IOException e) {
             e.printStackTrace();
         }

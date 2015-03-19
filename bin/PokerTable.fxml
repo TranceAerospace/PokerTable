@@ -6,7 +6,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PokerTableController">
    <children>
       <BorderPane layoutX="-14.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <bottom>
@@ -37,7 +37,7 @@
                         <Image url="@images/44.png" />
                      </image>
                   </ImageView>
-                  <ToggleButton mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" text="Sit" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <ToggleButton fx:id="togButton4" mnemonicParsing="false" onAction="#toggleSit" prefHeight="26.0" prefWidth="60.0" text="Sit" GridPane.columnIndex="4" GridPane.rowIndex="2" />
                </children>
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="10.0" prefWidth="60.0" />
@@ -84,7 +84,7 @@
                         <Image url="@images/34.png" />
                      </image>
                   </ImageView>
-                  <ToggleButton mnemonicParsing="false" prefWidth="60.0" text="Sit" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <ToggleButton fx:id="togButton2" mnemonicParsing="false" onAction="#toggleSit" prefWidth="60.0" text="Sit" GridPane.columnIndex="4" GridPane.rowIndex="2" />
                </children>
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="10.0" prefWidth="60.0" />
@@ -131,7 +131,7 @@
                         <Image url="@images/51.png" />
                      </image>
                   </ImageView>
-                  <ToggleButton mnemonicParsing="false" prefWidth="60.0" text="Sit" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <ToggleButton fx:id="togButton3" mnemonicParsing="false" onAction="#toggleSit" prefWidth="60.0" text="Sit" GridPane.columnIndex="4" GridPane.rowIndex="2" />
                </children>
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="10.0" prefWidth="60.0" />
@@ -178,7 +178,7 @@
                         <Image url="@images/36.png" />
                      </image>
                   </ImageView>
-                  <ToggleButton mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" text="Sit" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <ToggleButton fx:id="togButton" mnemonicParsing="false" onAction="#toggleSit" prefHeight="26.0" prefWidth="60.0" text="Sit" GridPane.columnIndex="4" GridPane.rowIndex="2" />
                </children>
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="10.0" prefWidth="60.0" />
