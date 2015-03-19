@@ -26,14 +26,14 @@ public class PokerTableController {
 
 	
 	
-	
+	// not used yet
 	@FXML
 	private void initialize() {
 	}
 
 
 	
-
+	//not used yet
 	public PokerTableController() {	
 		
 		
@@ -45,13 +45,13 @@ public class PokerTableController {
 
 	}
 
-
+	// not used yet
 	public boolean isSitToggled(){
 		return isSitToggled;
 	}
 
 	
-
+	// event listener on toggle
 	@FXML
 	private void toggleSit(ActionEvent event) {
 	if (((ToggleButton)event.getTarget()).isSelected()) {
