@@ -25,7 +25,7 @@ public class MainApp extends Application {
     }
 
     /**
-     * Initializes the root layout.
+     * Initializes the table layout.
      */
     public void initTableLayout() {
         try {
@@ -44,7 +44,7 @@ public class MainApp extends Application {
     }
 
     /**
-     * Shows the person overview inside the root layout.
+     * Shows the PokerTable inside the table layout.
      */
     public void showPokerTable() {
         try {
@@ -53,7 +53,7 @@ public class MainApp extends Application {
             loader.setLocation(MainApp.class.getResource("PokerTable.fxml"));
             AnchorPane PokerTable = (AnchorPane) loader.load();
 
-            // Set person overview into the center of root layout.
+            // Set tableLayout into the center of root layout.
             TableLayout.setCenter(PokerTable);
             
             PokerTableController controller = loader.getController();

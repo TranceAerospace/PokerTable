@@ -1,10 +1,13 @@
 import com.sun.javafx.accessible.utils.ToggleState;
 
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.ImageView;
+import javafx.scene.image.Image;
 
 public class PokerTableController {
 
@@ -27,7 +30,6 @@ public class PokerTableController {
 	
 	
 	// not used yet
-	@FXML
 	private void initialize() {
 	}
 
@@ -35,10 +37,13 @@ public class PokerTableController {
 	
 	//not used yet
 	public PokerTableController() {	
-		
+		while (!isSitToggled) {
+			((ImageView).
+		}
 		
 	}
 
+	
 
 	public void setMainApp(MainApp mainApp) {
 		this.mainApp = mainApp;
@@ -56,8 +61,10 @@ public class PokerTableController {
 	private void toggleSit(ActionEvent event) {
 	if (((ToggleButton)event.getTarget()).isSelected()) {
 		((ToggleButton)event.getTarget()).textProperty().set("Leave");
+		isSitToggled = true;
 	}
 		else ((ToggleButton)event.getTarget()).textProperty().set("Sit");
+		isSitToggled = false;
 	}
 	
 	
