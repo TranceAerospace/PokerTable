@@ -23,7 +23,12 @@ public class PokerTableController {
 	
 	@FXML
 	private ToggleButton togButton4;
-
+	
+	private Image cardBack = new Image("images/b1fv.png");
+	
+	@FXML
+	private ImageView currentCardFace = new ImageView();
+	
 	private boolean isSitToggled = false;
 	private MainApp mainApp;
 
@@ -37,9 +42,9 @@ public class PokerTableController {
 	
 	//not used yet
 	public PokerTableController() {	
-		while (!isSitToggled) {
-			((ImageView).
-		}
+		//while (!isSitToggled) {
+		//	Image img = new Image("images/b1fv");
+		//}
 		
 	}
 
@@ -61,10 +66,13 @@ public class PokerTableController {
 	private void toggleSit(ActionEvent event) {
 	if (((ToggleButton)event.getTarget()).isSelected()) {
 		((ToggleButton)event.getTarget()).textProperty().set("Leave");
+		//currentCardFace.setImage(cardBack);
+		
 		isSitToggled = true;
 	}
 		else ((ToggleButton)event.getTarget()).textProperty().set("Sit");
 		isSitToggled = false;
+		//currentCardFace.setImage(cardBack);
 	}
 	
 	

@@ -38,6 +38,7 @@ public class MainApp extends Application {
             Scene scene = new Scene(TableLayout);
             primaryStage.setScene(scene);
             primaryStage.show();
+            
         } catch (IOException e) {
             e.printStackTrace();
         }

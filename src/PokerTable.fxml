@@ -12,7 +12,7 @@
          <bottom>
             <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="89.0" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fitHeight="75.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                  <ImageView fx:id="currentCardFace" fitHeight="75.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                      <image>
                         <Image url="@images/14.png" />
                      </image>
